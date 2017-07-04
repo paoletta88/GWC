@@ -1,0 +1,43 @@
+
+
+body {
+    background-color: rgb(0, 94, 184);
+    data-w3-color="cmyk(99, 50, 0, 0)"
+    ;
+}
+    div {
+        background-color: rgb(0, 191, 255);
+        color: rgb(255, 255, 255);
+    }
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial
+    ;
+    font-size: 20px}
+
+        h2 {
+    color: red;
+    text-align: center;
+    font-family: Arial    ;
+    font-size: 20px}
+
+    h3 {
+color: yellow;
+text-align: center;
+font-family: courier    ;
+font-size: 20px}
+
+p {color: blue
+    font-size: 15px}
+
+    a {
+      text-align: left;
+        font-family: Arial;
+        font-size: 15px}
+
+
+
+
+
+        font-family: Arial;
