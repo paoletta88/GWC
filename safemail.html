@@ -9,10 +9,9 @@
   <link rel="stylesheet" media="all" href="accrec1/dist/core-design.css?v=1.0.4">
   <link rel="stylesheet" media="all" href="accrec1/css/site.css?v=1.0.4">
   <script src="https://use.fontawesome.com/36f14c1b4b.js"></script>
+  <script language="JavaScript" src="clock.js"></script>
   <script>
-    function alertMessage() {
-      alert("Clicking on strange links! Well, you can't click your way out of here");
-    }
+    window.onload = clock();
   </script>
 </head>
 
@@ -34,14 +33,14 @@
           <h3>The CIA game</h3>
         </div>
         <div class="ge-navigation__persistant ge-box -width--1of3 -text--right">
-          15m 00s<a href="index.html" class="-font-color--theme-light -font--plus-2 -padding--m"><i class="fa fa-clock-o"></i></a>
+          <span id="countdown">Countdown...</span> <a href="index.html" class="-font-color--theme-light -font--plus-2 -padding--m"><i class="fa fa-clock-o"></i></a>
         </div>
       </div>
       </div>
-    </header
+    </header>
 
-  <main>
-		<section>
+    <main>
+      <section>
 			<div class="ge-container -padding--m -padding--topbottom">
 				<div class="-padding--s -padding--topbottom__min60">
 
@@ -87,7 +86,9 @@ Once you took both print screen shot ...
 			Remember, if your email does not have a security signature on it, you will not have qualified this level.
     </section>
       <br>
-<a href="./images/fireworks.jpg" target="_blank" class="ge-button -text--center" style="width:80%">Are you done?</a>
+                <div class="ge-box -text--center">
+                <a href="./images/fireworks.jpg" target="_blank" class="ge-button -text--center">Are you done?</a>
+		</div>
 		</div>
 
 	</div>
@@ -100,9 +101,9 @@ Once you took both print screen shot ...
       </div>
     </div>
     </section>
-</main>
+  </main>
 
-<footer class="ge-footer -theme--dark">
+  <footer class="ge-footer -theme--dark">
 	<div class="ge-footer__copyright">© 2017 GENERAL ELECTRIC</div>
 	<div class="ge-footer__brand">
 		<div class="ge-lockup">
@@ -115,5 +116,8 @@ Once you took both print screen shot ...
 		<a href="http://www.ge.com/cookies" target="_blank">USE OF COOKIES</a>
 		<a href="http://www.ge.com/accessibility" target="_blank">ACCESSIBILITY</a>
 	</div>
-</footer>
+  </footer>
+  </div>
+</body>
+
 </html>

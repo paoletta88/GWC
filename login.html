@@ -10,10 +10,9 @@
   <link rel="stylesheet" media="all" href="accrec1/css/site.css?v=1.0.4">
   <script src="https://use.fontawesome.com/36f14c1b4b.js"></script>
   <script language="JavaScript" src="check3.js"></script>
+  <script language="JavaScript" src="clock.js"></script>
   <script>
-    function alertMessage() {
-      alert("Clicking on strange links! Well, you can't click your way out of here");
-    }
+    window.onload = clock();
   </script>
 </head>
 
@@ -32,10 +31,10 @@
         </a>
       </div>
       <div class="ge-box -width--1of3 -text--center -font-color--white">
-        <h3>The CIA game</h3>
+        <h3>The CIA Game</h3>
       </div>
       <div class="ge-navigation__persistant ge-box -width--1of3 -text--right">
-        15m 00s<a href="index.html" class="-font-color--theme-light -font--plus-2 -padding--m"><i class="fa fa-clock-o"></i></a>
+        <span id="countdown">Countdown...</span> <a href="index.html" class="-font-color--theme-light -font--plus-2 -padding--m"><i class="fa fa-clock-o"></i></a>
       </div>
     </div>
     </div>
@@ -50,7 +49,8 @@
 	    <img title="Replace :)" src="./images/strong_passwords.jpg" class="-width--xs -height--auto">
 	  </div>
 	  <strong>Password Security: YOU should care about it!</strong>
-	  <br><br>This one is simple, here are the answers.
+	  <br><br>
+          This one is simple, here are the answers.
 	  <br><br>
 	  The username, is <strong>username</strong> and the password is <strong>password</strong> ... with some modification (!)
 	  <br><br>
@@ -60,7 +60,7 @@
             <div class="ge-box -round--s -color--blue">
               <div class="ge-grid -gutter--m">
                 <div class="ge-box -width--1of4 -padding--xs">
-                  <a class="-font-color--theme-dark -font--plus-2 -padding--m"><i class="fa fa fa-facebook-square"></i></a> <span class="-font--h5">CASbook</span>
+                  <a class="-font-color--theme-dark -font--plus-2 -padding--s"><i class="fa fa fa-facebook-square"></i></a> <span class="-font--h5">CASbook</span>
                 </div>
                 <div class="ge-box -width--1of4">
                   Username
@@ -73,7 +73,6 @@
                   <input id="pswrd" type="password" name="pswrd" class="ge-text-input" style="min-height:1rem" />
                 </div>
                 <div class="ge-box -width--1of4">
-
                   <input type="button" value="Log In" class="ge-button -text--center" style="width:80%" onclick="check_creds()">
                 </div>
               </div>
