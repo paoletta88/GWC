@@ -36,7 +36,7 @@
           <h3>The CIA Game</h3>
         </div>
         <div class="ge-navigation__persistant ge-box -width--1of3 -text--right">
-          <span id="countdown">15m 00s</span> <a class="-font-color--theme-light -font--plus-2 -padding--m"><i class="fa fa-clock-o"></i></a>
+          <span id="countdown">Countdown...</span> <a class="-font-color--theme-light -font--plus-2 -padding--m"><i class="fa fa-clock-o"></i></a>
         </div>
       </div>
       </div>
@@ -46,8 +46,10 @@
     <section>
       <div class="ge-container -padding--m -padding--topbottom">
         <div class="-padding--s -padding--topbottom__min60">
-          <h3>Level 1 - Where do we go now?</h3>
-          <br>
+          <div class="ge-grid -gutter--m">
+            <div class="ge-box -width--2of3" style="margin-top:0"><h3>Level 1 - Where do we go now?</h3></div>
+  	    <div class="ge-box -width--1of3 -text--right" style="margin-bottom:0;margin-top:0"><img title="Confidentiality" src="./images/confidentiality.png" style="height: 4rem; width: auto"></div>
+          </div>
           <strong>You have to know, where you need to go!</strong>
           <br><br>
           Getting in using unique pass-phrases pre-dates IT systems by atleast 3000 years.
@@ -113,5 +115,9 @@
   </footer>
   </div>
 </body>
+
+<script>
+  window.onload = clock();
+</script>
 
 </html>

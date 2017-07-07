@@ -11,9 +11,6 @@
   <script src="https://use.fontawesome.com/36f14c1b4b.js"></script>
   <script language="JavaScript" src="check3.js"></script>
   <script language="JavaScript" src="clock.js"></script>
-  <script>
-    window.onload = clock();
-  </script>
 </head>
 
 <body>
@@ -44,8 +41,10 @@
     <section>
       <div class="ge-container -padding--m -padding--topbottom">
         <div class="-padding--s -padding--topbottom__min60">
-        <h3>Level 3 - Under Attack!</h3>
-        <br>
+          <div class="ge-grid -gutter--m">
+            <div class="ge-box -width--2of3" style="margin-top:0"><h3>Level 3 - Under Attack!</h3></div>
+  	    <div class="ge-box -width--1of3 -text--right" style="margin-bottom:0;margin-top:0"><img title="Integrity" src="./images/data-integrity.png" style="height: 4rem; width: auto"></div>
+          </div>
 	<strong>Let's forget about english!</strong>
 	<br><br>
 	01010111 01100001 01101110 01101110 01100001 01000011 01110010 01111001 00100000 01101000 01100001 01110011 00100000 01110011 01110000 01110010 01100101 01100001 01100100 00100000 01100001 01110010 01101111 01110101 01101110 01100100 00100000 01110100 01101000 01100101 00100000 01110111 01101111 01110010 01101100 01100100 00100000 01110100 01101000 01110010 01101111 01110101 01100111 01101000 00100000 01100001 00100000 01100011 01110010 01100001 01100110 01110100 01111001 00100000 01100001 01110100 01110100 01100001 01100011 01101011 00100000 01110110 01100101 01100011 01110100 01101111 01110010 00100000 01100001 01101110 01100100 00100000 01100001 01101110 00100000 01100001 01100010 01101001 01101100 01101001 01110100 01111001 00100000 01110100 01101111 00100000 01101010 01110101 01101101 01110000 00100000 01100110 01110010 01101111 01101101 00100000 01101101 01100001 01100011 01101000 01101001 01101110 01100101 00100000 01110100 01101111 00100000 01101101 01100001 01100011 01101000 01101001 01101110 01100101 00101110 00001101 00001010 01001101 01110101 01100011 01101000 00100000 01101111 01100110 00100000 01010111 01100001 01101110 01101110 01100001 01000011 01110010 01111001 00100111 01110011 00100000 01110100 01101000 01110010 01100101 01100001 01110100 00100000 01101000 01100001 01110011 00100000 01100010 01100101 01100101 01101110 00100000 01110010 01100101 01110011 01101111 01101100 01110110 01100101 01100100 00101100 00100000 01100010 01110101 01110100 00100000 01101001 01110100 00100111 01110011 00100000 01101111 01101110 01101100 01111001 00100000 01100001 00100000 01101101 01100001 01110100 01110100 01100101 01110010 00100000 01101111 01100110 00100000 01110100 01101001 01101101 01100101 00100000 01100010 01100101 01100110 01101111 01110010 01100101 00100000 01101001 01110100 11100010 10000000 10010100 01101111 01110010 00100000 01100001 00100000 01110011 01101001 01101101 01101001 01101100 01100001 01110010 00100000 01100010 01101001 01110100 00100000 01101111 01100110 00100000 01101101 01100001 01101100 01101001 01100011 01101001 01101111 01110101 01110011 00100000 01100011 01101111 01100100 01100101 11100010 10000000 10010100 01110011 01110100 01110010 01101001 01101011 01100101 01110011 00100000 01100001 01100111 01100001 01101001 01101110 00101110
@@ -58,8 +57,8 @@
         <input id="userid" type="text" name="userid" />
 	<br><br>
         <div class="ge-box -text--center">
-          <input type="button" class="ge-button -text--center" onclick="check_code(this.form)" value="Submit" />
-          <input type="reset" class="ge-button -text--center" value="Reset" />
+          <input type="button" class="ge-button -text--center" style="width:8rem" onclick="check_code(this.form)" value="Submit" />
+          <input type="reset" class="ge-button -text--center" style="width:8rem" value="Reset" />
         </div>
         </form>
         </div>
@@ -68,23 +67,25 @@
           <div class="ge-grid -gutter--m">
 
             <div class="ge-box -width--1of3">
-              <a href="http://en.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a>
-              <div class="ge-box -round--s -color--green-lighter-1 -padding--s">
-
-              <img title="ASCII" src="./images/ASCII.jpg" class="-padding--s" style="height: 6rem; width: auto">
+              <div class="ge-box -round--s -color--green-lighter-1 -padding--s -text--center">
+                <img title="ASCII" src="./images/ASCII.jpg" class="-padding--s" style="height: 6rem; width: auto">
+                <br>
+                <a href="http://en.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a>
               </div>
             </div>
 
             <div class="ge-box -width--1of3">
-              <a href="http://en.wikipedia.org/wiki/Binary_code" target="_blank">Binary</a>
-              <div class="ge-box -round--s -color--green-lighter-1 -padding--s">
+              <div class="ge-box -round--s -color--green-lighter-1 -padding--s -text--center">
                 <img title="Binary" src="./images/binary.jpg" class="-padding--s" style="height: 6rem; width: auto">
+                <br>
+                <a href="http://en.wikipedia.org/wiki/Binary_code" target="_blank">Binary</a>
               </div>
 	    </div>
             <div class="ge-box -width--1of3">
-              <a href="http://en.wikipedia.org/wiki/Hexadecimal" target="_blank">Hexadecimal</a>
-              <div class="ge-box -round--s -color--green-lighter-1 -padding--s">
+              <div class="ge-box -round--s -color--green-lighter-1 -padding--s -text--center">
 	        <img title="Hexadecimal" src="./images/hexadecimal.jpg" class="-padding--s" style="height: 6rem; width: auto">
+                <br>
+                <a href="http://en.wikipedia.org/wiki/Hexadecimal" target="_blank">Hexadecimal</a>
               </div>
 	    </div>
 	  </div>
@@ -119,5 +120,9 @@
   </footer>
   </div>
 </body>
+ 
+<script>
+  window.onload = clock();
+</script>
 
 </html>

@@ -30,3 +30,15 @@ function clock() {
     }
   }, 1000);
 }
+
+function getFinalTime() {
+  var countDownDate = localStorage.getItem("end_time");
+  var now = new Date().getTime();
+  
+  var finalTime = now - countDownDate; 
+
+  var minutes = Math.floor(((finalTime + (1000 * 60 * 15)) % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor(((finalTime + (1000 * 60 * 15)) % (1000 * 60)) / 1000);
+
+  document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s";
+}
