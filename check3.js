@@ -6,12 +6,12 @@ function check(form)
 
 function check_code(form)
 {
-  if(form.userid.value == "01100011 01111001 01100010 01100101 01110010 00100000 01110011 01100101 01100011 01110101 01110010 01101001 01110100 01111001 00001101 00001010")
+  if(form.userid.value == "cyber security")
   {
     alert("You gotcha!");
     window.open('safemail.html', "_self");
   }
-  else {alert("Try some more binary!")}
+  else {alert("Wrong! Think about a product")}
 }
 
 function check_creds()
