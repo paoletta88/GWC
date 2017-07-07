@@ -11,9 +11,6 @@
   <script src="https://use.fontawesome.com/36f14c1b4b.js"></script>
   <script language="JavaScript" src="check3.js"></script>
   <script language="JavaScript" src="clock.js"></script>
-  <script>
-    window.onload = clock();
-  </script>
 </head>
 
 <body>
@@ -44,18 +41,19 @@
     <section>
       <div class="ge-container -padding--m -padding--topbottom">
         <div class="-padding--s -padding--topbottom__min60">
-          <h3>Level 2 - What is the password?</h3>
-          <br>
+          <div class="ge-grid -gutter--m">
+            <div class="ge-box -width--2of3" style="margin-top:0"><h3>Level 2 - What is the password?</h3></h3></div>
+  	    <div class="ge-box -width--1of3 -text--right" style="margin-bottom:0;margin-top:0"><img title="Confidentiality" src="./images/confidentiality.png" style="height: 4rem; width: auto"></div>
+          </div>
 
-<div class="ge-grid -gutter--m -text--center">
-
-  <div class="ge-box -width--1of2">
-    <img title="Replace :)" src="./images/strong_passwords.jpg" class="-width--xs -height--auto">
-</div>
-  <div class="ge-box -width--1of2">
-<img title="secure psw" src="./images/secure-password.jpg" class="-width--xs -height--auto">
-      </div>
-        </div>
+          <div class="ge-grid -gutter--m -text--center">
+            <div class="ge-box -width--1of2">
+              <img title="Replace :)" src="./images/strong_passwords.jpg" style="height: 14rem; width: auto">
+            </div>
+            <div class="ge-box -width--1of2">
+              <img title="secure psw" src="./images/secure-password.jpg" style="height: 14rem; width: auto">
+            </div>
+          </div>
 
 	  <strong>Password Security: YOU should care about it!</strong>
 	  <br><br>
@@ -66,7 +64,7 @@
           Just Login (If you can).
 	</div>
         <div class="-padding--l -padding--topbottom__min60">
-            <div class="ge-box -round--s -color--blue">
+            <div class="ge-box -round--m -color--blue">
               <div class="ge-grid -gutter--m">
                 <div class="ge-box -width--1of4 -padding--xs">
                   <a class="-font-color--theme-dark -font--plus-2 -padding--s"><i class="fa fa fa-facebook-square"></i></a> <span class="-font--h5">CASbook</span>
@@ -118,5 +116,9 @@
   </footer>
   </div>
 </body>
+
+<script>
+  window.onload = clock();
+</script>
 
 </html>
