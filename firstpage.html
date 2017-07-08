@@ -8,13 +8,17 @@
   <link rel="icon" href="accrec1/dist/brand/favicon/ge-monogram-gray.ico">
   <link rel="stylesheet" media="all" href="accrec1/dist/core-design.css?v=1.0.4">
   <link rel="stylesheet" media="all" href="accrec1/css/site.css?v=1.0.4">
+  <link rel="stylesheet" media="all" href="mypopup.css">
   <script src="https://use.fontawesome.com/36f14c1b4b.js"></script>
   <script language="JavaScript" src="clock.js"></script>
   <script>
     function alertMessage() {
       alert("Clicking on strange links! Well, you can't click your way out of here");
     }
-    window.onload = clock();
+    function myPopup() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("myshow");
+    }
   </script>
 </head>
 <!--'The key word here is login'-->
@@ -70,7 +74,7 @@
               <br>
               <a class="ge-button -text--center" style="width:80%">This does nothing. Nope, nothing</a>
               <br>
-              <a href="./images/home.jpg" target="_blank" class="ge-button -text--center" style="width:80%">Click here to view the answer</a>
+              <a target="_blank" class="ge-button -text--center mypopup" style="width:80%" onclick="myPopup()">Click here to view the answer<span class="mypopuptext" id="myPopup"><img title="Home" src="./images/home.jpg" class="-width--m -height--auto"</span></a>
               <br>
               </div>
           </div>
